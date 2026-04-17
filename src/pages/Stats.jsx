@@ -17,7 +17,7 @@ export default function Stats() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
-      <h1 className="font-bold text-3xl text-gray-900 mb-3 tracking-tight">Friendship Analytics</h1>
+      <h1 className="font-bold text-3xl text-gray-900 mb-4 tracking-tight">Friendship Analytics</h1>
       {data.length === 0 ? (
         <div className="flex flex-col items-center py-20 gap-3 text-center">
           <BarChart2 size={44} className="text-gray-200" />

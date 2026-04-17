@@ -1,16 +1,66 @@
-# React + Vite
+#KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A relationship management app that helps you stay connected with the people who matter most.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##Description
 
-## React Compiler
+KeenKeeper is a friendship tracker that lets you set contact goals for each friend, log interactions, and visualize your relationship habits over time. Never let important friendships fade due to a busy schedule.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|---|---|
+| React.js | UI library |
+| React Router DOM | Client-side routing |
+| Tailwind CSS | Utility-first styling |
+| Recharts | Pie chart for analytics |
+| react-hot-toast | Toast notifications |
+| Lucide React | Icons |
+| Vite | Build tool |
+
+---
+
+##Key Features
+
+1.**Friend Cards with Status** — See all your friends at a glance with color-coded status indicators (Overdue, Almost Due, On Track) based on your last contact date.
+
+2.**Quick Check-In Logging** — Log a call, text, or video chat from a friend's detail page in one click. Each interaction is instantly added to your personal timeline with a toast confirmation.
+
+3.**Friendship Analytics** — A dedicated Stats page with a Recharts Pie Chart that visualizes the breakdown of your interaction types (Call / Text / Video) so you can see how you connect best.
+
+---
+
+##Pages
+
+- **Home** — Banner with summary cards + 4-column friend grid
+- **Friend Detail** — Full profile, stats, goal tracker, and quick check-in
+- **Timeline** — Filterable history of all interactions
+- **Stats** — Pie chart analytics of interaction types
+- **404** — Custom not-found page
+
+---
+
+##Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+---
+
+##Deployment
+
+```bash
+npm run build
+```
+
+Deploy the `dist/` folder to Netlify, Vercel, or any static host.
+
+> **Note:** For SPA routing to work after deployment, configure your host to redirect all routes to `index.html`.
