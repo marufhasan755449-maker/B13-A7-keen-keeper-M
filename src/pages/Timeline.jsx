@@ -3,9 +3,9 @@ import { Phone, MessageSquare, Video, Clock, ChevronDown } from "lucide-react";
 import { useTimeline } from "../context/TimelineContext";
 
 const typeConfig = {
-  Call:  { Icon: Phone,         border: "border-l-emerald-500", iconBg: "bg-emerald-50 text-emerald-600" },
-  Text:  { Icon: MessageSquare, border: "border-l-violet-500",  iconBg: "bg-violet-50 text-violet-600"   },
-  Video: { Icon: Video,         border: "border-l-amber-500",   iconBg: "bg-amber-50 text-amber-600"     },
+  Call:  { Icon: Phone,  iconBg: "bg-emerald-50 text-emerald-600" },
+  Text:  { Icon: MessageSquare,  iconBg: "bg-violet-50 text-violet-600"   },
+  Video: { Icon: Video, iconBg: "bg-amber-50 text-amber-600"     },
 };
 
 export default function Timeline() {
@@ -18,7 +18,6 @@ export default function Timeline() {
     <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
       <h1 className="font-bold text-3xl text-gray-900 mb-3 tracking-tight">Timeline</h1>
 
-      {/* Filter Dropdown */}
       <div className="relative mb-8 w-64">
         <select
           value={filter}
@@ -35,7 +34,6 @@ export default function Timeline() {
         <ChevronDown size={15} className="absolute right-3 top-3 text-gray-400 pointer-events-none" />
       </div>
 
-      {/* Entries */}
       {filtered.length === 0 ? (
         <div className="flex flex-col items-center py-20 gap-3 text-center">
           <Clock size={44} className="text-gray-200" />
