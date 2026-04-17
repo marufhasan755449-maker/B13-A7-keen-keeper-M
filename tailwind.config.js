@@ -8,9 +8,9 @@ export default {
         leaf:   '#2D6A4F',
       },
       fontFamily: {
-        sans:  ['Inter', 'sans-serif'],
-        serif: ['"DM Serif Display"', 'serif'],
-      },
+  sans: ['Geist', 'sans-serif'],
+  serif: ['"DM Serif Display"', 'serif'],
+},
     },
   },
   plugins: [],

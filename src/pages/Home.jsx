@@ -29,11 +29,10 @@ export default function Home() {
 
   return (
     <div>
-      {/* ── Banner ── */}
       <section className="bg-white border-b border-gray-200 py-16 text-center px-4">
         <div className="max-w-xl mx-auto">
-          <h1 className="font-serif text-4xl sm:text-5xl text-gray-900 leading-tight mb-4 tracking-tight">
-            Friends to keep close<br />in your life
+          <h1 className="font-bold text-3xl sm:text-4xl text-gray-900 leading-tight mb-4 tracking-tight">
+            Friends to keep close in your life
           </h1>
           <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-sm mx-auto">
             Your personal shelf of meaningful connections. Browse, tend, and
@@ -48,7 +47,6 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Stat Cards */}
         <div className="max-w-3xl mx-auto mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 px-2">
           {stats.map(({ label, value, Icon, color }) => (
             <div key={label} className="bg-white border border-gray-200 rounded-2xl
@@ -64,7 +62,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Friends Grid ── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
         <h2 className="text-lg font-bold text-gray-900 mb-5">Your Friends</h2>
 

@@ -139,13 +139,6 @@ export default function FriendDetail() {
               Contact <strong className="text-gray-700">{friend.name.split(" ")[0]}</strong> every{" "}
               <strong className="text-gray-700">{friend.goal} days</strong> to maintain this friendship.
             </p>
-            <div className="flex items-center gap-3">
-              <div className="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
-                <div className={`h-full rounded-full transition-all duration-700 ${st.bar}`}
-                     style={{ width: `${pct}%` }} />
-              </div>
-              <span className="text-xs font-bold text-gray-500 w-9 text-right">{pct}%</span>
-            </div>
           </div>
 
           {/* Quick Check-In */}

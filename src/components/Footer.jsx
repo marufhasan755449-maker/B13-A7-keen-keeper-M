@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import myImage  from '../assets/KeenKeeper.png'
 
 const InstagramSVG = () => (
   <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
@@ -23,19 +23,16 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-14 flex flex-col items-center text-center gap-3">
 
         {/* Brand */}
-        <div className="flex items-center gap-2">
-          <Heart size={20} className="text-emerald-400" fill="#34d399" />
-          <span className="font-serif text-2xl font-bold tracking-tight">KeenKeeper</span>
+        <div className="w-72">
+        <img src={myImage} alt="" />
         </div>
 
         {/* Tagline */}
-        <p className="text-sm text-emerald-200/80 max-w-sm leading-relaxed">
-          Your personal shelf of meaningful connections. Browse, tend, and
-          nurture the relationships that matter most.
-        </p>
+        <p className="font-sans text-[10px] text-white max-w-sm">
+        Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
 
         {/* Social */}
-        <p className="text-xs text-emerald-300/70 mt-1">Social Links</p>
+        <p className="text-xs text-white mt-1">Social Links</p>
         <div className="flex items-center gap-2.5">
           {[InstagramSVG, FacebookSVG, TwitterSVG].map((Icon, i) => (
             <a
@@ -54,7 +51,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row
-                        justify-between items-center gap-2 text-xs text-emerald-400/60">
+                        justify-between items-center gap-2 text-xs text-white">
           <span>© 2026 KeenKeeper. All rights reserved.</span>
           <div className="flex gap-5">
             {["Privacy Policy", "Terms of Service", "Cookies"].map((t) => (
