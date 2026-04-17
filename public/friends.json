@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Rahman",
+    "picture": "https://i.pravatar.cc/300?img=47",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in first year of university during orientation week. We bonded over our shared love of Bengali literature and late-night adda sessions.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Ahmed",
+    "picture": "https://i.pravatar.cc/300?img=11",
+    "email": "tanvir.ahmed@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "My senior at the office who taught me everything about system design. He always has time to review my code and give constructive feedback.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture": "https://i.pravatar.cc/300?img=48",
+    "email": "nusrat.jahan@yahoo.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["school", "childhood"],
+    "bio": "We grew up in the same neighborhood in Sylhet. Despite living far apart now, we always pick up right where we left off whenever we meet.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 4,
+    "name": "Rafiul Islam",
+    "picture": "https://i.pravatar.cc/300?img=15",
+    "email": "rafiul.islam@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["college", "roommate"],
+    "bio": "Lived together for 3 years in the university dorm. He introduced me to programming and we built our first project together during a 48-hour hackathon.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 5,
+    "name": "Sabrina Hossain",
+    "picture": "https://i.pravatar.cc/300?img=44",
+    "email": "sabrina.hossain@proton.me",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["family", "cousin"],
+    "bio": "My favorite cousin who lives in Dhaka. She is a doctor and always gives me free medical advice. We used to spend every Eid together as kids.",
+    "goal": 21,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 6,
+    "name": "Imran Chowdhury",
+    "picture": "https://i.pravatar.cc/300?img=12",
+    "email": "imran.chowdhury@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["work", "team"],
+    "bio": "We worked together on the same product team for two years. He is the best designer I know and has a sharp eye for user experience details.",
+    "goal": 10,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Maliha Sultana",
+    "picture": "https://i.pravatar.cc/300?img=49",
+    "email": "maliha.sultana@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["college", "study group"],
+    "bio": "We studied together for every major exam in our CS degree. Her notes were legendary and she never refused to help anyone who was struggling.",
+    "goal": 7,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 8,
+    "name": "Zubair Hassan",
+    "picture": "https://i.pravatar.cc/300?img=13",
+    "email": "zubair.hassan@icloud.com",
+    "days_since_contact": 31,
+    "status": "overdue",
+    "tags": ["school", "best friend"],
+    "bio": "My best friend from secondary school. We used to play cricket every afternoon. He moved to Canada two years ago but we try to stay connected.",
+    "goal": 21,
+    "next_due_date": "2026-04-05"
+  }
+]
