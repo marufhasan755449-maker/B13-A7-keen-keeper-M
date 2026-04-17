@@ -17,7 +17,6 @@ export default function FriendCard({ friend }) {
                  items-center text-center cursor-pointer shadow-sm
                  hover:-translate-y-1 hover:shadow-md transition-all duration-200"
     >
-      {/* Avatar */}
       <img
         src={friend.picture}
         alt={friend.name}
@@ -25,17 +24,14 @@ export default function FriendCard({ friend }) {
         className="w-16 h-16 rounded-full object-cover border-2 border-gray-100 mb-3"
       />
 
-      {/* Name */}
       <h3 className="text-sm font-bold text-gray-900 w-full truncate mb-1">
         {friend.name}
       </h3>
 
-      {/* Days */}
       <p className="text-xs text-gray-400 mb-2.5">
         {friend.days_since_contact}d ago
       </p>
 
-      {/* Tags */}
       <div className="flex flex-wrap justify-center gap-1 mb-3">
         {friend.tags.map((tag) => (
           <span
@@ -48,7 +44,6 @@ export default function FriendCard({ friend }) {
         ))}
       </div>
 
-      {/* Status badge */}
       <span className={`text-[0.7rem] font-bold px-3.5 py-1 rounded-full ${st.style}`}>
         {st.label}
       </span>

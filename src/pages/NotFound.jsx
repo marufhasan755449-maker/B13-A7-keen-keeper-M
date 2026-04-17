@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh]
                     text-center px-4 gap-3">
-      <p className="font-serif text-8xl font-bold text-gray-200 leading-none">404</p>
+      <p className="font-serif text-8xl font-bold text-[#244D3F] leading-none">404</p>
       <h1 className="text-xl font-bold text-gray-800">Page Not Found</h1>
       <p className="text-sm text-gray-400 mb-3">
         Looks like this friendship doesn't exist yet.

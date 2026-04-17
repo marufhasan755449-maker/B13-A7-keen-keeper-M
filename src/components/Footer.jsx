@@ -19,19 +19,15 @@ const TwitterSVG = () => (
 export default function Footer() {
   return (
     <footer className="bg-forest text-white mt-auto">
-      {/* Main content */}
       <div className="max-w-6xl mx-auto px-6 py-14 flex flex-col items-center text-center gap-3">
 
-        {/* Brand */}
         <div className="w-72">
         <img src={myImage} alt="" />
         </div>
 
-        {/* Tagline */}
         <p className="font-sans text-[10px] text-white max-w-sm">
         Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
 
-        {/* Social */}
         <p className="text-xs text-white mt-1">Social Links</p>
         <div className="flex items-center gap-2.5">
           {[InstagramSVG, FacebookSVG, TwitterSVG].map((Icon, i) => (
@@ -48,7 +44,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row
                         justify-between items-center gap-2 text-xs text-white">

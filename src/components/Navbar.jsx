@@ -12,7 +12,6 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 h-[68px] bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
 
-        {/* Logo */}
         <NavLink to="/" className="flex items-center gap-2 text-gray-900 no-underline">
           <span className="text-[1.2rem]">
             <span className="font-normal">Keen</span>
@@ -20,7 +19,6 @@ export default function Navbar() {
           </span>
         </NavLink>
 
-        {/* Nav links */}
         <div className="flex items-center gap-1">
           {links.map(({ to, label, Icon }) => (
             <NavLink

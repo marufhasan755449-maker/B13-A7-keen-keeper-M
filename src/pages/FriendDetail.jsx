@@ -43,12 +43,11 @@ export default function FriendDetail() {
 
   const handleCheckin = (type) => {
     addEntry(friend.name, type);
-    toast.success(`${type} with ${friend.name} logged! 🎉`);
+    toast.success(`${type} with ${friend.name} logged!`);
   };
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
-      {/* Back */}
       <button
         onClick={() => navigate(-1)}
         className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700
@@ -60,7 +59,6 @@ export default function FriendDetail() {
 
       <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-5">
 
-        {/* ── Left: Friend Info ── */}
         <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm
                         flex flex-col items-center text-center h-fit">
           <img src={friend.picture} alt={friend.name}
@@ -71,7 +69,6 @@ export default function FriendDetail() {
             {st.label}
           </span>
 
-          {/* Tags */}
           <div className="flex flex-wrap justify-center gap-1.5 mb-3">
             {friend.tags.map((t) => (
               <span key={t} className="text-[0.65rem] font-bold uppercase tracking-wide
@@ -87,7 +84,6 @@ export default function FriendDetail() {
           )}
           <p className="text-xs text-gray-400">📧 {friend.email}</p>
 
-          {/* Action buttons */}
           <div className="w-full border-t border-gray-100 mt-5 pt-4 space-y-1.5">
             {[
               { Icon: AlarmClock, label: "Snooze 2 Weeks", cls: "hover:text-emerald-600 hover:bg-emerald-50 hover:border-emerald-300" },
@@ -104,10 +100,7 @@ export default function FriendDetail() {
           </div>
         </div>
 
-        {/* ── Right Column ── */}
         <div className="space-y-4">
-
-          {/* Stat Cards */}
           <div className="grid grid-cols-3 gap-4">
             {[
               { Icon: Clock,    label: "Days Since Contact", value: friend.days_since_contact },
@@ -125,7 +118,6 @@ export default function FriendDetail() {
             ))}
           </div>
 
-          {/* Relationship Goal */}
           <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
             <div className="flex justify-between items-center mb-3">
               <h3 className="text-sm font-bold text-gray-900">Relationship Goal</h3>
@@ -140,8 +132,6 @@ export default function FriendDetail() {
               <strong className="text-gray-700">{friend.goal} days</strong> to maintain this friendship.
             </p>
           </div>
-
-          {/* Quick Check-In */}
           <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
             <h3 className="text-sm font-bold text-gray-900 mb-1">Quick Check-In</h3>
             <p className="text-xs text-gray-400 mb-4">Log an interaction to reset the timer</p>
